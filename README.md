@@ -15,7 +15,18 @@ This short analysis aims to answer the question of whether closeness centrality 
  Edgeware Road and its nearby neighbourhoods are generally considered to be one of the busiest areas in central London, given the presence of both Marylebone and Paddington within 2000m radius. From my experience of living nearby, most of the cafes and coffee shops are located near Marylebone Road and Baker Street, where most tourists and travellers would visit and pass by. In contrast, the cafes are rarely seen near the residential buildings or other public facilities like Church or Children’s centre, which may not have a comparable connectivity.
 
 **Results and Visualisations**
-(see in the attached png files)
+
+Figure 1 Cafe locations
+![Figure 1 Cafe locations](cafes_map_cafe_points.png)
+
+
+Figure 2 Betweeness centrality map 
+![Figure 2 Betweeness centrality map](cafes_map_bc.png)
+
+
+Figure 3 Closeness centrality map
+![Figure 2 Closeness centrality map](cafes_map_cc.png)
+
 
 
 **Discussion**
@@ -88,7 +99,9 @@ import matplotlib.colors as colors
 
     Collecting osmnx
       Downloading osmnx-1.9.1-py3-none-any.whl (104 kB)
-    [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/104.3 kB[0m [31m?[0m eta [36m-:--:--[0m[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m [32m102.4/104.3 kB[0m [31m3.1 MB/s[0m eta [36m0:00:01[0m[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m104.3/104.3 kB[0m [31m2.5 MB/s[0m eta [36m0:00:00[0m
+    [?25l     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/104.3 kB[0m [31m?[0m eta [36m-:--:--[0m
+[2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[90m╺[0m [32m102.4/104.3 kB[0m [31m3.1 MB/s[0m eta [36m0:00:01[0m
+[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m104.3/104.3 kB[0m [31m2.5 MB/s[0m eta [36m0:00:00[0m
     [?25hRequirement already satisfied: geopandas>=0.12 in /usr/local/lib/python3.10/dist-packages (from osmnx) (0.13.2)
     Requirement already satisfied: networkx>=2.5 in /usr/local/lib/python3.10/dist-packages (from osmnx) (3.2.1)
     Requirement already satisfied: numpy>=1.20 in /usr/local/lib/python3.10/dist-packages (from osmnx) (1.23.5)
